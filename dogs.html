@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-9 Platoon | OUR DOGS</title>
+    <script>
+        function openNav() {
+      document.getElementById("mySidebar").style.width="250px";
+      document.getElementById("main").style.marginLeft="250px";
+  }
+  function closeNav() {
+      document.getElementById("mySidebar").style.width="0";
+      document.getElementById("main").style.marginLeft="0";
+  }
+      </script>
+    <style>
+      .sidebar{
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: whitesmoke;
+      overflow-x:hidden ;
+      padding-top: 60px;
+      transition: 0.5s;
+  }
+  .sidebar a{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: darkslateblue;
+      display: block;
+      transition: 0.3s;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .sidebar a:hover{
+      color: #f1f1f1;
+  }
+  .sidebar .closebtn{
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  
+  .openbtn{
+      font-size: 40px;
+      cursor: pointer;
+      background-color: transparent;
+      color: rgb(49, 43, 83);
+      padding: 10px 15px;
+      border: none;
+  }
+  #main{
+      transition: margin-left .5s;
+      padding: 20px;
+  }
+  
+  @media screen and(max-height:450px) {
+      .sidebar{padding-top: 15px;}
+      .sidebar a{font-size: 18px;}
+  }
+      @media(min-width:500px) {
+      
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      #logo{
+          width: 120px;
+          margin: 20px;
+          border-radius: 50%;
+      }
+      .b1{
+          width: 100%;
+          margin-top: 200px;
+      }
+      h1{
+         display: flex;
+         justify-content: center;
+          color: darkslateblue;
+          padding: 40px;
+          font-family: sans-serif;
+      }
+      body #img1{
+          width:50%;
+          object-fit: contain;
+          border-radius: 50%;
+          padding-bottom: 0;
+          padding-top: 20px;
+      }
+      .p1{
+          text-align: center;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-bottom: 20px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 500;
+          font-size: large;
+          line-height: 1.4em;
+          color: rgb(75, 82, 88);
+      }
+      .btn1{
+          padding-bottom: 15px;
+          padding-top: 15px;
+          padding-left: 20px;
+          padding-right: 20px;
+          background: palevioletred;
+          border: none;
+          margin-left: 10px;
+          margin-bottom: 40px;
+          border-radius: 15px;
+      }
+      .btn2{
+          text-decoration: none;
+          color: #fff;
+      }
+      .contain{
+          padding-bottom: 50px;
+      }
+      .btn3{
+          display: inline;
+          font-size: 18px;
+          color:rgb(75, 82, 88) ;
+          background: #fff;
+          padding: 10px 016px;
+          margin-left: 30px;
+          border: none;
+          cursor: pointer;
+          text-decoration: none;
+          border-radius: 12px;
+          border: 1px solid rgb(75, 82, 88);
+      }
+      .red{
+          background: palevioletred;
+          color: #fff;
+          border: none;
+      }
+      .doggo{
+          width: 100%;
+      }
+      .d1{
+          text-align: center;
+          color: palevioletred;
+      }
+      .conbox{
+          border: none;
+          margin: 20px;
+          border-radius: 12px;
+          background: palevioletred;
+          
+      }
+      .open{
+          padding-bottom: 5px;
+      display: flex;
+      justify-content: left;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .form{
+          align-items: center;
+      }
+      .form input{
+          width: 40%;
+          padding: 15px;
+          border: #ddd 1px solid;
+          border-radius: 20px;
+          margin-left: 30px;
+          margin-bottom: 10px;
+          
+      }
+     .form .message{
+          border-radius: 0;
+          padding-bottom: 90px;
+      }
+      .btn4{
+          padding: 12px;
+          background: orange;
+          border: none;
+          margin-left: 30px;
+          margin-bottom: 40px;
+          border-radius: 15px;
+          width: 40%;
+          color: white;
+          cursor: pointer;
+      }
+      hr{
+          width: 80%;
+          display: flex;
+          justify-content: center;
+  
+  
+      }
+      .foot{
+          color: darkslateblue;
+          text-decoration: none;
+      }
+      .img2 img{
+          width: 100%;
+          object-fit: contain;
+      }
+      .about{
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 20px;
+          font-size: 1.2cm;
+      }
+      section{
+          background: rgb(221, 201, 204);
+          
+      }
+      .p3{
+          text-align: center;
+          padding-bottom: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          color: darkslateblue;
+          font-size: large;
+          font-weight: bold
+      }
+      #us{
+          color: 
+          rgb(228, 62, 117);
+      }
+  }
+  @media(min-width:1024px){
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      #logo{
+          width: 120px;
+          margin: 20px;
+          border-radius: 50%;
+      }
+      .b1{
+          width: 100%;
+          margin-top: 200px;
+      }
+      h1{
+         display: flex;
+         justify-content: center;
+          color: darkslateblue;
+          padding: 40px;
+          font-family: sans-serif;
+          font-size: 1.3cm;
+      }
+      .header{
+          font-size: 2cm;
+      }
+      body #img1{
+          width:50%;
+          object-fit: contain;
+          border-radius: 50%;
+          padding-bottom: 0;
+          padding-top: 20px;
+      }
+      .p1{
+          text-align: center;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-bottom: 20px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 500;
+          font-size: 0.7cm;
+          line-height: 1.4em;
+          color: rgb(75, 82, 88);
+      }
+      .btn1{
+          padding-bottom: 15px;
+          padding-top: 15px;
+          padding-left: 20px;
+          padding-right: 20px;
+          background: palevioletred;
+          border: none;
+          margin-left: 10px;
+          margin-bottom: 40px;
+          border-radius: 15px;
+      }
+      .btn2{
+          text-decoration: none;
+          color: #fff;
+      }
+      .contain{
+          padding-bottom: 50px;
+      }
+      .btn3{
+          display: inline;
+          font-size: 18px;
+          color:rgb(75, 82, 88) ;
+          background: #fff;
+          padding: 10px 016px;
+          margin-left: 30px;
+          border: none;
+          cursor: pointer;
+          text-decoration: none;
+          border-radius: 12px;
+          border: 1px solid rgb(75, 82, 88);
+      }
+      .red{
+          background: palevioletred;
+          color: #fff;
+          border: none;
+      }
+      .doggo{
+          width: 60%;
+          height: 500px;
+          object-fit: contain;
+          padding: 10px;
+          border-radius: 2px;
+      }
+      .d1{
+          text-align: center;
+          color: palevioletred;
+      }
+      .conbox{
+          border: none;
+          margin: 20px;
+          border-radius: 12px;
+          background: palevioletred;
+          
+      }
+      .open{
+          padding-bottom: 5px;
+      display: flex;
+      justify-content: left;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .form{
+          align-items: center;
+      }
+      .form input{
+          width: 40%;
+          padding: 15px;
+          border: #ddd 1px solid;
+          border-radius: 20px;
+          margin-left: 30px;
+          margin-bottom: 10px;
+          
+      }
+      .form .message{
+          border-radius: 0;
+          padding-bottom: 90px;
+      }
+      .btn4{
+          padding: 12px;
+          background: orange;
+          border: none;
+          margin-left: 30px;
+          margin-bottom: 40px;
+          border-radius: 15px;
+          width: 90%;
+          color: white;
+          cursor: pointer;
+      }
+      hr{
+          width: 80%;
+          display: flex;
+          justify-content: center;
+      
+      
+      }
+      .foot{
+          color: darkslateblue;
+          text-decoration: none;
+      }
+      .img2 img{
+          width: 100%;
+          object-fit: contain;
+      }
+      .about{
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 20px;
+          font-size: 1.2cm;
+      }
+      section{
+          background: rgb(221, 201, 204);
+          
+      }
+      .p3{
+          text-align: center;
+          padding-bottom: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          color: darkslateblue;
+          font-size: large;
+          font-weight: bold
+      }
+      #us{
+          color: 
+          rgb(228, 62, 117);
+      }
+  }
+      @media(max-width: 500px) {
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  #logo{
+      width: 120px;
+      margin: 20px;
+      border-radius: 50%;
+  }
+  .b1{
+      width: 100%;
+      margin-top: 200px;
+  }
+  h1{
+     display: flex;
+     justify-content: center;
+      color: darkslateblue;
+      padding: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  #img1{
+      width:100%;
+      border-radius: 50%;
+      padding-bottom: 0;
+      padding-top: 20px;
+  }
+  .p1{
+      text-align: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      font-size: large;
+      line-height: 1.4em;
+      color: rgb(75, 82, 88);
+  }
+  .btn1{
+      padding-bottom: 15px;
+      padding-top: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background: palevioletred;
+      border: none;
+      margin-left: 10px;
+      margin-bottom: 40px;
+      border-radius: 15px;
+  }
+  .btn2{
+      text-decoration: none;
+      color: #fff;
+  }
+  .contain{
+      padding-bottom: 50px;
+  }
+  .btn3{
+      display: inline;
+      font-size: 18px;
+      color:rgb(75, 82, 88) ;
+      background: #fff;
+      padding: 10px 016px;
+      margin-left: 30px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 12px;
+      border: 1px solid rgb(75, 82, 88);
+  }
+  .red{
+      background: palevioletred;
+      color: #fff;
+      border: none;
+  }
+  .doggo{
+      width: 100%;
+  }
+  .d1{
+      text-align: center;
+      color: palevioletred;
+  }
+  .conbox{
+      border: none;
+      margin: 20px;
+      border-radius: 12px;
+      background: rgb(228, 62, 117);
+      
+  }
+  .open{
+      padding-bottom: 5px;
+  display: flex;
+  justify-content: left;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .form{
+      align-items: center;
+  }
+  .form input{
+      width: 90%;
+      padding: 15px;
+      border: #ddd 1px solid;
+      border-radius: 20px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      
+  }
+  .form .message{
+      border-radius: 0;
+      padding-bottom: 90px;
+  }
+  .btn4{
+      padding: 12px;
+      background: orange;
+      border: none;
+      margin-left: 30px;
+      margin-bottom: 40px;
+      border-radius: 15px;
+      width: 90%;
+      color: white;
+      cursor: pointer;
+  }
+  .foot{
+      color: darkslateblue;
+      text-decoration: none;
+  }
+  .img2 img{
+      width: 100%;
+  }
+  .about{
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px;
+      font-size: 1.2cm;
+  }
+  section{
+      background: rgb(221, 201, 204);
+      
+  }
+  .p3{
+      text-align: center;
+      padding-bottom: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: darkslateblue;
+      font-size: large;
+      font-weight: bold
+  }
+  #us{
+      color: 
+      rgb(228, 62, 117);
+  }
+  }
+  
+  
+    </style>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> 
+        &times;</a>
+        <h3><a href="index.html">Home</a></h3>
+        <h3><a href="about_us.html">About Us</a></h3>
+        <h3><a href="contact.html">Contact</a></h3>
+        <h3><a href="dogs.html">Dogs</a></h3>
+        <h3><a href="purchasing.html">Deposit Info</a></h3>
+       </div>
+       <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+       </div>
+    <img id="logo" src="images/logo.jpg" alt="">
+        <section>
+            <h1 class="header">Welcome To 
+                <br> K-9 Platoon</h1><br><br><br>
+            <div>
+                <img class="doggo" src="images/a.jpg" alt="">
+                <h1>Black Labrador Puppy</h1>
+               <p class="p1">This puppy has perfect anatomy and is ready to meet a new family.</p>
+               <p class="p1">Fci genealogy and AKC registered.</p>
+               <p class="p1">Viral Tests and vaccines Arrived Completed</p>
+               <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+    
+            <div>
+                <img class="doggo" src="images/b.jpg" alt="">
+                <h1>Labrador Retriever Puppy</h1>
+               <p class="p1">Our Labrador Retriever Puppy.</p>
+               <p class="p1">Character and health test were done. He started to gain toilet habits.</p>
+               <p class="p1">This puppy comes with An AKC pedigree and has all his vaccinations</p>
+               <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+       
+            <div>
+                <img class="doggo" src="images/c.jpg" alt="">
+       <h1>Maltese Puppy</h1>
+      <p class="p1">Our Maltese  puppies are 2,5 months old and their vaccinations and viral tests have been done. These maltese puppies,which are mini in sixe and will not exceed 2.5 kg in adulthood, this puppy is ready to go to a new home</p>
+      <p class="p1"></p>
+      <p class="p1"></p>
+      <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+
+            <div>
+                <img class="doggo" src="images/d.jpg" alt="">
+      <h1>Australian Shepherd Puppy</h1>
+      <p class="p1">Our AKC registered Red merle Australian Shepard Puppies Are ready to go to their new homes</p>
+      <p class="p1"></p>
+      <p class="p1"></p>
+      <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+      
+            <div>
+                <img class="doggo" src="images/e.jpg" alt="">
+                <h1>French bulldog puppy</h1>
+                <p class="p1">French bulldog puppies</p>
+                <p class="p1">it is a curious and playful dog breed. with the right upbringing and training,they become perfect family members. Contact us to adopt a French bulldog puppy.</p>
+                <p class="p1"><b>The pedigree and documents of our French Bulldog Puppies are complete.</b></p>
+                <p class="p1"><b>Our French bulldog puppies have a passport and a report card.</b></p>
+                <p class="p1"><b>Microchip Application has been made.</b></p>
+                
+                <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+     
+        <div>
+            <img class="doggo" src="images/f.jpg" alt="">
+            <h1>Maltese Terrier Puppy</h1>
+            <p class="p1">"With their white color and long fur Maltese Terrier puppies are very intelligent and sensitive, beside their unique appereance. COntact us to adopt our Maltese Terrier puppies</p>
+            <p class="p1"><b>Our maltese Terrier puppies have a passport and a report card.</b></p>
+            <p class="p1">vaccinations and tests against dangerous viruses have been made.</p>
+            <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+        </div>
+
+            <div>
+                <img class="doggo" src="images/g.jpg" alt="">
+      <h1>German Shepherd Puppy</h1>
+      <p class="p1">With the right training and guidance, the German Shepherd can be a great family dog, gaurd dog or working dog. The German shepherd is the most preffered dog breed in the world with its versatile structure.</p>
+      <p class="p1"><b>vaccinations and tests against dangerous viruses have been made.</b></p>
+      <p class="p1"><b>Within the scope of the puppy socialisation Program, socialized and puppy training was provided.</b></p>
+      <p class="p1"><b>Toilet habit has been introduced.</b></p>
+      <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+      
+            <div>
+                <img class="doggo" src="images/h.jpg" alt="">
+                <h1>Blue Merle Pomeranian Puppy</h1>
+                <p class="p1"></p>
+                <p class="p1"><b>Blue Merle is a special and rare fur color in Dogs.</b></p>
+                <p class="p1"><b>Our baby has a report card and passport.</b></p>
+                <p class="p1"><b>vaccinations and tests against dangerous viruses have been made.</b></p>
+                <p class="p1"><b>Within the scope of the puppy socialisation Program, socialized and puppy training was provided.</b></p>
+                <p class="p1"><b>Toilet habit has been introduced.</b></p>
+                <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+            <div>
+                <img class="doggo" src="images/i.jpg" alt="">
+      <h1>Japanese Spitz puppy</h1>
+      <p class="p1">Adopting Japanese Spitz Puppy</p>
+      <p class="p1"><b>Although intelligent and easily trainable, it belongs to the companion dogs group. It is one of the breeds with the least shedding and combing needs among long-haired dogs. It is among the most preferred breeds in japan due to its easy training and adaptability to apartment life. Japanese Spitz puppieshave a white color and their shoulder size is between 25-35 cm. Japanese Spitz Puppies are among the dog breeds that get along well with children. Contact us for more info</b></p>
+      <p class="p1"></p>
+      <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+            <div>
+                <img class="doggo" src="images/j.jpg" alt="">
+                <h1>Teacup Poodle Puppy</h1>
+               <p class="p1"><b>Race Color:</b> Red</p>
+               <p class="p1"><b>size:</b>Small Breed</p>
+               <p class="p1"><b>Health Card:</b> Yes</p>
+               <p class="p1"><b>Age:</b>3 months</p>
+               <p class="p1"><b>Puppy Training:</b>Completed</p>
+               <p class="p1"><b>Microchip:</b>Yes</p>
+               <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+            </div>
+     
+            <div>
+                <img class="doggo" src="images/k.jpg" alt="">
+     <h1>Jack Russel Terrier Puppy</h1>
+     <p class="p1"><b>Race Color:</b> bi-color</p>
+     <p class="p1"><b>size:</b>Small Breed</p>
+     <p class="p1"><b>Health Card:</b> Yes</p>
+     <p class="p1"><b>Age:</b>2 months</p>
+     <p class="p1"><b>Puppy Training:</b>Not Completed</p>
+     <p class="p1"><b>Microchip:</b>Yes</p>
+    <button class="btn1"><h2><a class="btn2" href="contact.html">Adopt this pup!</a></h2></button>
+
+            </div>
+     
+
+
+
+        </section>
+        <h1>Welcome To 
+            <br> K-9 Platoon</h1><br><br><br>
+            <p class="p1">We have many breeds availablesuch as spoodle, cocker spaniel, Boston terrier, Dacshund, French Bulldog, Jack Russel, Shitzu, Chihuahua, Pomeranian, Corgi, Poodle, Pug, Cavalier, Beagle, Moodle, Cavoodle and many more.</p>
+            <p class="p1">We also sell pet supplies for dogs such as food,toys, grooming products, Treats, Bed, Coats, Collars, And bowls.</p>
+            <p class="p1">A wide range of specialised services are coming soon, Including doggy day-care, dog grooming, and dog boarding.</p><br>
+            <button class="btn1"><h2><a class="btn2" href="contact.html">Learn More</a></h2></button><br>
+    
+            <form action="https://formspree.io/f/xvoypyoy" method="POST" >
+                <div class="conbox">
+                    <h1 class="open">Drop us a line! <br>Make an <br> appointment</h1>
+                    <div class="form">
+                        <input type="text" placeholder="Name" name="fname"><br>
+                        <input type="email" placeholder="Email" name="email"><br>
+                        <input type="text" placeholder="Number" name="number"><br>   
+                        <input class="message" type="text" placeholder="Let us know what we can do for you">
+                        <button class="btn4"><h2>Send</h2></button>
+                    </div>
+                    
+                </div>
+            </form>
+            <h1>Get in Touch</h1>
+            <p class="p1">Whatever your pet questions, we are happy to help!</p>
+             <h1>Working hours</h1>
+            <p class="p1">Monday - Friday: 9:30 AM - 5.15 PM </p>
+            <p class="p1">Saturday: 9:30 AM - 4:15 PM</p>
+            <p class="p1">Sunday: 10:00 AM - 3:50 PM</p>
+             <h1>Need Help?</h1>
+            <p class="p1">How do you treat fleas? What type of food is healthiest for pets and how much food does my pet need? What vaccine should my pet get?</p>
+            <hr>
+            <p class="p1">Copyright &copy;. All Rights Reserved Carefully Crafted By <a class="foot" href="#"><b>Sam Online</b> </a></p>
+</body>
+</html>
